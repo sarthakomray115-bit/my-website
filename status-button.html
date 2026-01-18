@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Events Status Bar</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button
+     onmouseover="window.status='Mouse is over the button'" 
+    onmouseout="window.status='Mouse left the button'" 
+    onclick="window.status='Button clicked!'">
+    <p><a href="https://www.w3schools.com/html/default.asp">Hover or Click ME</a></p>
+  </button>
+</body>
+</html>

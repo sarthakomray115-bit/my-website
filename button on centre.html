@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Status Bar Message</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function mouseOverMsg() {
+            window.status = "Mouse is over the button";
+        }
+
+        function mouseOutMsg() {
+            window.status = "Mouse moved away from the button";
+        }
+
+        function mouseClickMsg() {
+            window.status = "Button clicked";
+        }
+    </script>
+</head>
+
+<body>
+
+    <button 
+        onmouseover="mouseOverMsg()" 
+        onmouseout="mouseOutMsg()" 
+        onclick="mouseClickMsg()">
+        Hover Me
+    </button>
+
+</body>
+</html>
