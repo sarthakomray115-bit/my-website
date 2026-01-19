@@ -3,115 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <title>Sarthak Omre | Portfolio</title>
-
-  <!-- CSS MUST BE INSIDE <style> -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #111;
-      color: white;
-      padding: 40px;
-      text-align: center;
-    }
-
-    section {
-      background: white;
-      margin: 20px;
-      padding: 30px;
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #111;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-
-    .project {
-      margin-bottom: 15px;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Sarthak Omre</h1>
-    <p>Web Developer | Student</p>
-  </header>
+<header>
+  <h1>Sarthak Omray</h1>
+  <p>Web Developer | Student</p>
+</header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a passionate web developer learning HTML, CSS, and JavaScript.
-      I love building clean and responsive websites.
-    </p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate web developer learning HTML, CSS, and JavaScript.
+    I love building clean and responsive websites.
+  </p>
+</section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Git & GitHub</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Personal Website</h3>
-      <p>A basic personal website using HTML and CSS.</p>
-    </div>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Personal Website</h3>
+    <p>A basic personal website using HTML & CSS.</p>
+  </div>
+  <div class="project">
+    <h3>Form Validation</h3>
+    <p>Simple form with JavaScript validation.</p>
+  </div>
+</section>
 
-    <div class="project">
-      <h3>Form Validation</h3>
-      <p>Simple form validation using JavaScript.</p>
-    </div>
-  </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: sarthakomray115@@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/sarthakomray15-bit" target="_blank">github.com/sarthakomray15-bit</a></p>
+</section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: sarthakomray115@gmail.com</p>
-    <p>
-      GitHub:
-      <a href="https://github.com/sarthakomray15-bit" target="_blank">
-        github.com/sarthakomray15-bit
-      </a>
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2026 Sarthak Omray</p>
-  </footer>
+<footer>
+  <p>© 2026 Sarthak Omray</p>
+</footer>
 
 </body>
 </html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
 
+header {
+  background: #111;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
 
+section {
+  padding: 30px;
+  margin: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #111;
+}
+
+ul {
+  list-style: square;
+}
+
+.project {
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+console.log("Portfolio Loaded Successfully");
