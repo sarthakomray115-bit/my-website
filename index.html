@@ -1,123 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Portfolio with Experiment</title>
 
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+            margin: 0;
         }
 
         header {
             background-color: #34495e;
             color: white;
-            padding: 25px;
+            padding: 20px;
             text-align: center;
+        }
+
+        .menu {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .menu button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
         }
 
         section {
             background: white;
             margin: 20px auto;
             padding: 20px;
-            max-width: 900px;
+            max-width: 800px;
             border-radius: 8px;
+            display: none;
         }
 
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-
-        .edu-card {
+        .edu-card, .exp-card {
             background-color: #ecf0f1;
             padding: 15px;
             margin-top: 10px;
             border-radius: 6px;
         }
-
-        ul {
-            line-height: 1.8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #34495e;
-            color: white;
-        }
     </style>
+
+    <script>
+        function showSection(id) {
+            document.getElementById("education").style.display = "none";
+            document.getElementById("experiment").style.display = "none";
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
 </head>
 
 <body>
 
 <header>
-    <h1>Sarthak Omre</h1>
+    <h1>Your Name</h1>
     <p>Student | Web Developer</p>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a passionate student learning web development and programming.
-        I enjoy building simple and clean websites.
-    </p>
-</section>
+<div class="menu">
+    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('experiment')">Experiment</button>
+</div>
 
-<section>
-    <h2>Personal Details</h2>
-    <p><strong>Email:</strong> sarthakomray115@email.com</p>
-    <p><strong>Phone:</strong> 8982169268</p>
-    <p><strong>City:</strong> INDORE, India</p>
-</section>
-
-<section>
+<!-- Education Section -->
+<section id="education">
     <h2>Education</h2>
 
     <div class="edu-card">
         <h3>10th Standard</h3>
-        <p>Vivekanad High Secondary School</p>
-        <p>Year: 2022</p>
+        <p>ABC School</p>
+        <p>Year: 2020</p>
     </div>
 
     <div class="edu-card">
         <h3>12th Standard</h3>
-        <p>Vivekanad High Secondary School</p>
-        <p>Year: 2024</p>
-    </div>
-
-    <div class="edu-card">
-        <h3>Graduation</h3>
-        <p>Shri Vaishnav institude of information technology</p>
-        <p>Year: 2025</p>
+        <p>XYZ College</p>
+        <p>Year: 2022</p>
     </div>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript (Basics)</li>
-        <li>Python (Basics)</li>
-    </ul>
-</section>
+<!-- Experiment Section -->
+<section id="experiment">
+    <h2>Experiments</h2>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li>Personal Portfolio Website</li>
-        <li>Student Registration Form</li>
-        <li>Simple Calculator</li>
-    </ul>
-</section>
+    <div class="exp-card">
+        <h3>Experiment 1</h3>
+        <p>Create a web page with image (300x300) and ALT text.</p>
+    </div>
 
-<footer>
-    <p>© 2026 Sarthak omre | Portfolio</p>
-</footer>
+    <div class="exp-card">
+        <h3>Experiment 2</h3>
+        <p>Create a bulleted list of friends using circle bullets.</p>
+    </div>
+
+    <div class="exp-card">
+        <h3>Experiment 3</h3>
+        <p>Create a button with mouse events.</p>
+    </div>
+</section>
 
 </body>
 </html>
