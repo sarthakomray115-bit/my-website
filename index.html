@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio with Experiment</title>
+    <title>Portfolio with Experiments</title>
 
     <style>
         body {
@@ -33,29 +33,45 @@
             background: white;
             margin: 20px auto;
             padding: 20px;
-            max-width: 800px;
+            max-width: 900px;
             border-radius: 8px;
             display: none;
         }
 
-        .edu-card, .exp-card {
+        .card {
             background-color: #ecf0f1;
             padding: 15px;
-            margin-top: 10px;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+
+        pre {
+            background-color: #111;
+            color: #0f0;
+            padding: 15px;
+            overflow-x: auto;
             border-radius: 6px;
         }
     </style>
 
     <script>
         function showSection(id) {
-            document.getElementById("education").style.display = "none";
+            document.getElementById("about").style.display = "none";
             document.getElementById("experiment").style.display = "none";
+            document.getElementById("contact").style.display = "none";
+
             document.getElementById(id).style.display = "block";
         }
     </script>
 </head>
 
-<body>
+<body onload="showSection('about')">
 
 <header>
     <h1>Your Name</h1>
@@ -63,44 +79,100 @@
 </header>
 
 <div class="menu">
-    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('about')">About</button>
     <button onclick="showSection('experiment')">Experiment</button>
+    <button onclick="showSection('contact')">Contact</button>
 </div>
 
-<!-- Education Section -->
-<section id="education">
-    <h2>Education</h2>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
 
-    <div class="edu-card">
-        <h3>10th Standard</h3>
-        <p>ABC School</p>
-        <p>Year: 2020</p>
-    </div>
+    <img src="C:\Users\sarth\OneDrive\Pictures\sarthak_omre.jpg" alt="My Photo" width="150" height="150" class="profile-pic">
 
-    <div class="edu-card">
-        <h3>12th Standard</h3>
-        <p>XYZ College</p>
-        <p>Year: 2022</p>
+    <div class="card">
+        <p><strong>Name:</strong> Sarthak omre</p>
+        <p><strong>Course:</strong> B.Tech</p>
+        <p><strong>Branch:</strong> Computer Science</p>
+        <p><strong>College:</strong> Shri Vaisnav Institude of Technology</p>
+        <p><strong>City:</strong> Indore</p>
     </div>
 </section>
 
-<!-- Experiment Section -->
+<!-- EXPERIMENT (CODE ONLY) -->
 <section id="experiment">
-    <h2>Experiments</h2>
+    <h2>Experiments (Code Only)</h2>
 
-    <div class="exp-card">
-        <h3>Experiment 1</h3>
-        <p>Create a web page with image (300x300) and ALT text.</p>
+    <div class="card">
+        <h3>Experiment 1: Insert Photo</h3>
+        <pre><code>
+&lt;img src="photo.jpg" alt="My Photo" width="150" height="150"&gt;
+        </code></pre>
     </div>
 
-    <div class="exp-card">
-        <h3>Experiment 2</h3>
-        <p>Create a bulleted list of friends using circle bullets.</p>
+    <div class="card">
+        <h3>Experiment 2: Image with ALT</h3>
+        <pre><code>
+&lt;img src="image.jpg" alt="Sample Image" width="300" height="300"&gt;
+        </code></pre>
     </div>
 
-    <div class="exp-card">
-        <h3>Experiment 3</h3>
-        <p>Create a button with mouse events.</p>
+    <div class="card">
+        <h3>Experiment 3: Friends List</h3>
+        <pre><code>
+&lt;ul style="list-style-type: circle;"&gt;
+  &lt;li&gt;Prince&lt;/li&gt;
+  &lt;li&gt;Girik&lt;/li&gt;
+  &lt;li&gt;Ajay&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 4: Personal Details</h3>
+        <pre><code>
+&lt;p&gt;Name: Your Name&lt;/p&gt;
+&lt;p&gt;Course: B.Tech&lt;/p&gt;
+&lt;p&gt;City: Your City&lt;/p&gt;
+        </code></pre>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 5: Center Button</h3>
+        <pre><code>
+&lt;div style="text-align:center;"&gt;
+  &lt;button&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;
+        </code></pre>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 6: Mouse Events</h3>
+        <pre><code>
+&lt;button onmouseover="window.status='Mouse Over'"
+        onmouseout="window.status='Mouse Out'"&gt;
+ Hover Me
+&lt;/button&gt;
+        </code></pre>
+    </div>
+
+    <div class="card">
+        <h3>Experiment 7: Login Page</h3>
+        <pre><code>
+&lt;input type="text" placeholder="Username"&gt;
+&lt;input type="password" placeholder="Password"&gt;
+&lt;button&gt;Login&lt;/button&gt;
+        </code></pre>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p><strong>Email:</strong> sarthakomray115@email.com</p>
+        <p><strong>Phone:</strong> 8982169268</p>
+        <p><strong>City:</strong>Indore</p>
     </div>
 </section>
 
